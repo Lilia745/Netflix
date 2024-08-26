@@ -35,12 +35,13 @@ function MoviePage() {
                 <div className="img-wrraper">
                     <img
                         src={`${img_url}${movie.poster_path}`}
-                        alt={movie.title}
                     />
                 </div>
                 <div className="movie-details">
                     <h2>{movie.title}</h2>
+                    <h4>Release Date:  {movie.release_date}</h4>
                     <p>{movie.overview}</p>
+                    <h4>Budget:  {movie.budget}$</h4>
                     <h3>Genres:</h3>
                     <ul>
                         {movie.genres.map((genre) => (

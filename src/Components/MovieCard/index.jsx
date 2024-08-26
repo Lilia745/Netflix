@@ -8,7 +8,7 @@ function MovieCard({ movie }) {
     return (
         <div className="movie-card">
             <Link to={`/movie/${movie.id}`}>
-                <img src={`${img_url}${movie.poster_path}`} alt={movie.title} />
+                <img src={`${img_url}${movie.poster_path}`} />
                 <div className="movie-info">
                     <h3>{movie.title}</h3>
                 </div>

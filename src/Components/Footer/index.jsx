@@ -34,6 +34,7 @@ function Footer() {
                     </a>
                     .
                 </p>
+                <p>© MY MOVIE WEB-PAGE</p> 
             </div>
         </footer>
     );

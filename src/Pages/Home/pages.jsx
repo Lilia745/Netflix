@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../../App.css";
 import MovieList from "../../Components/MovieList";
+import Error from "../../Components/Error";
 
 const api_key = "9b702a6b89b0278738dab62417267c49";
 const main_url = "https://api.themoviedb.org/3";
@@ -32,7 +33,7 @@ function Home() {
     };
 
     return (
-        <div className="container">
+        <section className="container">
             <form onSubmit={handleSearch}>
                 <input
                     type="text"
@@ -43,7 +44,7 @@ function Home() {
                 <button type="submit">Search</button>
             </form>
             <MovieList movies={movies} />
-        </div>
+        </section>
     );
 }
 

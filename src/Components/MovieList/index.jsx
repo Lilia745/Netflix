@@ -1,8 +1,7 @@
-import React from "react";
 import "../../App.css";
 import MovieCard from "../MovieCard";
 
-function MovieList({ movies }) {
+function MovieList({movies}) {
     return (
         <div className="movie-list">
             {movies.map((movie) => (
