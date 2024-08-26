@@ -31,12 +31,11 @@ const ActorSlider = ({ movie }) => {
                     },
                 }}
             >
-                {movie.credits.cast.slice(0, 10).map((actor) => (
+                {movie.credits.cast.map((actor) => (
                     <SwiperSlide key={actor.cast_id}>
                         <div className="actor-card">
                             <img
                                 src={`${actorImgUrl}${actor.profile_path}`}
-                                alt={actor.name}
                                 onError={(e) => {
                                     e.target.src =
                                         "https://via.placeholder.com/200x300?text=No+Image";

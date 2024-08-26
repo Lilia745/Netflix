@@ -20,7 +20,10 @@ function Home() {
         fetch(url)
             .then((res) => res.json())
             .then((data) => {
-                setMovies(data.results);
+                setMovies(data.results)
+                if (data.results == "") {
+                    <Error/>
+                }
             });
     };
 
